@@ -1,0 +1,16 @@
+/* Config Studio Custom Plugin Styles */
+
+.cs-plugin-container {
+  padding: 16px;
+  background-color: var(--color-base-surface, #1e222b);
+  color: var(--color-text-main, #e2e8f0);
+  border-radius: 8px;
+  border: 1px solid var(--color-base-border, #2d3748);
+}
+
+.cs-plugin-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent, #00d2b4);
+  margin-bottom: 8px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "config-studio-plugin-template",
+  "version": "1.0.0",
+  "description": "Official starter template for Config Studio plugins and extensions",
+  "main": "main.js",
+  "scripts": {
+    "build": "node build.js",
+    "pack": "node pack.js",
+    "test": "node --test dist/test/*.test.js",
+    "test:ts": "tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.5"
+  }
+}

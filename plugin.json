@@ -1,0 +1,22 @@
+{
+  "id": "my-plugin",
+  "name": "My Custom Plugin",
+  "version": "1.0.0",
+  "description": "Custom extension for Config Studio built with official plugin template",
+  "author": "Author Name <author@example.com>",
+  "license": "MIT",
+  "minCoreVersion": "2.0.0",
+  "entrypoints": {
+    "main": "main.js",
+    "style": "style.css"
+  },
+  "permissions": [
+    "fs:read",
+    "editor:read",
+    "editor:write",
+    "ui:toolbar",
+    "ui:split-panel",
+    "ui:bottom-dock"
+  ],
+  "tags": ["template", "custom"]
+}
