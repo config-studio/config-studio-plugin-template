@@ -5,7 +5,8 @@
   "description": "Custom extension for Config Studio built with official plugin template",
   "author": "Author Name <author@example.com>",
   "license": "MIT",
-  "minCoreVersion": "2.0.0",
+  "minCoreVersion": "2.3.6",
+  "minAppVersion": "2.3.6",
   "entrypoints": {
     "main": "main.js",
     "style": "style.css"
