@@ -20,17 +20,18 @@
   "description": "Описание возможностей плагина",
   "author": "Your Name <you@example.com>",
   "license": "MIT",
-  "minCoreVersion": "2.0.0",
-  "entrypoints": {
-    "main": "main.js",
-    "style": "style.css"
-  },
+  "icon": "puzzle",
+  "entry": "main.js",
+  "css": "style.css",
+  "styles": ["style.css"],
   "permissions": [
-    "fs:read",
-    "editor:read",
-    "editor:write",
-    "ui:toolbar"
-  ]
+    "fs.read",
+    "fs.write",
+    "ui.panels",
+    "toolbar",
+    "contextmenu"
+  ],
+  "minAppVersion": "2.3.6"
 }
 ```
 

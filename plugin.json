@@ -5,19 +5,27 @@
   "description": "Custom extension for Config Studio built with official plugin template",
   "author": "Author Name <author@example.com>",
   "license": "MIT",
-  "minCoreVersion": "2.3.6",
-  "minAppVersion": "2.3.6",
-  "entrypoints": {
-    "main": "main.js",
-    "style": "style.css"
-  },
+  "icon": "puzzle",
+  "entry": "main.js",
+  "css": "style.css",
+  "styles": ["style.css"],
   "permissions": [
-    "fs:read",
-    "editor:read",
-    "editor:write",
-    "ui:toolbar",
-    "ui:split-panel",
-    "ui:bottom-dock"
+    "fs.read",
+    "fs.write",
+    "ui.panels",
+    "toolbar",
+    "contextmenu"
   ],
+  "locales": {
+    "ru": {
+      "name": "Мой плагин",
+      "description": "Пользовательское расширение для Config Studio"
+    },
+    "en": {
+      "name": "My Custom Plugin",
+      "description": "Custom extension for Config Studio"
+    }
+  },
+  "minAppVersion": "2.3.6",
   "tags": ["template", "custom"]
 }

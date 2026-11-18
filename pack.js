@@ -22,11 +22,21 @@ if (fs.existsSync(dist)) fs.rmSync(dist, { recursive: true });
 fs.mkdirSync(dist);
 
 // Copy package payload files
-const filesToPack = ['plugin.json', 'main.js', 'style.css', 'README.md'];
+const filesToPack = ['plugin.json', 'main.js', 'style.css', 'README.md', 'local.json', 'localization.json'];
 for (const f of filesToPack) {
   const src = path.join(__dirname, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(dist, f));
+  }
+}
+
+// Copy locales directory if present
+const localesDir = path.join(__dirname, 'locales');
+if (fs.existsSync(localesDir) && fs.statSync(localesDir).isDirectory()) {
+  const destLocales = path.join(dist, 'locales');
+  fs.mkdirSync(destLocales, { recursive: true });
+  for (const f of fs.readdirSync(localesDir)) {
+    fs.copyFileSync(path.join(localesDir, f), path.join(destLocales, f));
   }
 }
 
